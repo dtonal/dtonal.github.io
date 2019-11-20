@@ -56,7 +56,7 @@ body {
     margin-bottom: 0px;
 }
 
-.title {
+.avatar-title {
     color: #9c0d38;
     text-align: center;
     margin-top: 5px;
@@ -73,7 +73,6 @@ body {
 }
 
 .background-div {
-    height: 100vh;
     /* Location of the image */
     background-image: url(imgs/background.jpg);
     /* Background image is centered vertically and horizontally at all times */
@@ -119,24 +118,13 @@ body {
     top: 400px;
 }
 
-.exp-container {
-    display: grid;
-    grid-template-columns: auto auto;
-    background-color: rgba(255, 255, 255, 0);
-    color: black;
-    grid-gap: 40px;
-}
-
-.exp {
-    background-color: white;
-    height: 200px;
-}
-
 .link-container {
     display: grid;
     background-color: #9c0d38;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 50px 150px;
+    border-radius: 15px;
+    margin-bottom: 40px;
 }
 
 .link-head {
@@ -154,6 +142,12 @@ body {
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     margin: auto;
+    transition: color 0.5s;
+    cursor: pointer;
+}
+
+.link p {
+    margin-top: 5px;
 }
 
 .cdwrs-img {
@@ -165,14 +159,79 @@ body {
     .link-container {
         display: grid;
         background-color: #9c0d38;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-row-gap: 15px;
-        grid-template-rows: 50px;
+        grid-template-rows: 50px 150px 150px;
         padding-bottom: 15px;
     }
     .link-head {
         grid-column-start: 1;
-        grid-column-end: 2;
+        grid-column-end: 3;
         text-align: center;
     }
+}
+
+.link:hover {
+    color: #53a194;
+}
+
+.exp-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+    grid-gap: 40px;
+}
+
+@media (max-width: 880px) {
+    .exp-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: rgba(255, 255, 255, 0);
+        color: black;
+        grid-gap: 40px;
+    }
+}
+
+.exp {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 5px;
+    border-radius: 15px;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr auto;
+    padding: 10px 20px;
+}
+
+.exp .title {
+    text-align: center;
+    color: #9c0d38;
+}
+
+.exp .duration {
+    color: #0c9f86;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bolder;
+    margin-top: -10px
+}
+
+.exp ul {
+    margin-top: 0;
+}
+
+.exp .company {
+    color: #9c0d38;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+.exp .grade {
+    text-align: right;
+}
+
+.exp .description {
+    font-size: larger;
+    margin-top: 15px;
 }
