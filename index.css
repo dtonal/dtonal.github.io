@@ -64,8 +64,8 @@ body {
 }
 
 .avatar {
-    width: 140px;
-    height: 140px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     display: block;
     margin-left: auto;
@@ -234,4 +234,47 @@ body {
 .exp .description {
     font-size: larger;
     margin-top: 15px;
+}
+
+.projects {
+    background-color: #9c0d38;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 30px;
+    font-size: larger;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+}
+
+.projects .projects-title {
+    text-align: center;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: 8px;
+}
+
+.project-description {
+    text-align: justify;
+}
+
+.project-icon {
+    margin-top: 15px;
+}
+
+.project-title h3 {
+    text-align: right;
+}
+
+@media (max-width: 880px) {
+    .project {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .projects {
+        row-gap: 30px;
+    }
 }

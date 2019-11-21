@@ -11,20 +11,6 @@
 
     <link rel="stylesheet" type="text/css" href="index.css" />
     <script src="https://kit.fontawesome.com/0fad53ed00.js" crossorigin="anonymous"></script>
-    <title>dtonal - Software Engineer </title>
-    <!-- 
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script> -->
 </head>
 
 <body>
@@ -48,8 +34,8 @@
 
         <div class="avatar-container">
             <img class="avatar" src="imgs/me.jpg" alt="me" />
-            <h2 class="name">Torben Müller</h2>
-            <h3 class="avatar-title">Software Developer</h3>
+            <h1 class="name">Torben Müller</h1>
+            <h2 class="avatar-title">Software Developer</h2>
         </div>
 
         <div class="link-container">
@@ -159,7 +145,54 @@
             </div>
         </div>
 
+        <div class="projects">
+            <h1 class="projects-title">PROJECTS</h1>
+            <div class="project">
+                <div class="project-title">
+                    <h3>
+                        Using SCSS
+                    </h3>
+                </div>
+                <div class="project-title">
+                    <p class="project-description">
+                        I realised that i used pure css to style this page
+                        and i never had the need to use any css precompilers.
+                        That's why i am currently learning some basic SCSS stuff.
+                        Hopefully that will enhance the styling structure.
+                    </p>
+                </div>
+                <div class="project-icon">
+                    <i class="fab fa-sass fa-5x"></i>
+                </div>
+            </div>
 
+            <div class="project">
+                <div class="project-title">
+                    <h3>
+                        Rebuild my Moneykeeper-App
+                    </h3>
+                </div>
+                <div class="project-title">
+                    <p class="project-description">
+                        Two years ago i implemented an Android application to administrate and controll the running
+                        costs.
+                        The use was very easy. You started the app and can add a new cost with a simple form.
+                        The cost was send to a backend (implemented with Rails) and saved at a database.
+                        The user could configurate a monthly limit.
+                        The limit was used to show the user if the sum of costs is expected or will raise the limit.
+                    </p>
+                    <p class="project-description">
+                        I will rebuild this Application with clients for Android (using Kotlin) and for the web (using
+                        React).
+                        This older version was only for me and my wife. But i wan't to make it possible for everyone.
+                        Meaning user can register and configurate groups.
+                    </p>
+                </div>
+                <div class="project-icon">
+                    <i class="fab fa-react fa-5x"></i>
+                </div>
+            </div>
+        </div>
 </body>
 
 </html>
