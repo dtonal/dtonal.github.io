@@ -13,7 +13,18 @@
         background-color: rgba(255, 255, 255, 0);
         color: black;
         grid-gap: 40px;
-        font-size: smaller;
+        font-size: medium;
+    }
+}
+
+@media (max-width: 500px) {
+    .exp-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: rgba(255, 255, 255, 0);
+        color: black;
+        grid-gap: 40px;
+        font-size: x-small;
     }
 }
 
