@@ -2,7 +2,6 @@
 ideale größe: 1050px
 */
 html, body {
-    overflow-x: hidden;
     width: 100%;
   }
 
@@ -41,7 +40,7 @@ nav ul {
 }
 
 nav[class="main-nav"] ul {
-    background-image: linear-gradient(to right, #131111 50%, #4e0909);
+    background-color: #131111
 }
 
 nav ul li a {
@@ -564,6 +563,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
 
     header {
         display: none;  
